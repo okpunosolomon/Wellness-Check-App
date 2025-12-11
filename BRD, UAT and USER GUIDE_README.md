@@ -1,4 +1,3 @@
-
 # 🩺 Wellness Check Application – BRD, UAT & User Guide  
 **Client: SOL Ltd** | Consultant: **Solomon Okpuno**  
 
@@ -7,26 +6,28 @@
 ## 📘 1. Business Requirements Document (BRD)
 
 ### 🧩 Project Title  
-**Wellness Check Application – Enhancing Patient Safety & Supervisor Escalation with Power Platform**
+**Wellness Check Application – Empowering Carers with Escalation-Ready Vitals Monitoring**
 
 ---
 
 ### 🧠 Executive Summary  
-SOL Ltd identified a critical need to streamline **wellness assessments** performed by nurses and carers. The previous paper-based workflow led to **delayed escalations**, **inconsistent recording**, and **missed compliance checks**.
+SOL Ltd sought a reliable, scalable digital solution to improve how **nurses and carers conduct patient wellness checks**, manage abnormal readings, and escalate concerns to clinical supervisors in real time.  
 
-The **Wellness Check App**, built on Microsoft Power Platform, enables digital recording of patient vitals, **auto-triggered supervisor escalation**, and **real-time monitoring** using Power Automate, Dataverse, and Microsoft Teams/Outlook.
+The **Wellness Check App**, developed on **Microsoft Power Platform**, digitises patient assessments, applies clinical thresholds, and automates the end-to-end **escalation and approval process** through **Power Automate**, **Teams**, and **Dataverse**.
+
+This application strengthens **patient safety**, promotes **workflow efficiency**, and offers **traceable decision-making** for clinical leads.
 
 ---
 
 ### 🎯 Business Objectives
 
-| Objective | Description | Expected Outcome |
-|----------|-------------|------------------|
-| Digitise wellness assessments | Replace paper-based data collection | More accurate records |
-| Automate escalations | Alert supervisors when vitals are abnormal | Faster clinical response |
-| Maintain audit trails | Track actions by system, carer, supervisor | Compliance and traceability |
-| Support remote approvals | Allow approvals via Teams or Outlook | Improve decision speed |
-| Enable KPI tracking | Provide insights on escalation frequency | Quality and performance reviews |
+| Objective | Description | Measurable Outcome |
+|-----------|-------------|--------------------|
+| Digitise clinical data capture | Replace paper-based assessments with digital records | 100% digital submissions |
+| Automate escalation flows | Automatically detect and escalate abnormal vitals | Supervisor alerted within 1 min |
+| Improve decision cycle | Enable real-time approval via Teams or Email | Approval cycle < 10 mins |
+| Maintain audit logs | Store time-stamped actions in Dataverse | Fully traceable logs |
+| Support continuous improvement | Provide visibility into response metrics | Escalation reports & dashboards |
 
 ---
 
@@ -34,113 +35,117 @@ The **Wellness Check App**, built on Microsoft Power Platform, enables digital r
 
 | Role | Name / Department | Responsibility |
 |------|-------------------|----------------|
-| Sponsor | Head of Clinical Operations | Strategic Oversight |
-| Clinical Lead | Lead Nurse / Matron | Workflow Design |
-| Users | Carers & Nurses | Data entry, assessment |
-| Supervisors | Team Leads | Escalation approvals |
-| Consultant | Solomon Okpuno | Delivery, automation, documentation |
+| Project Sponsor | Head of Clinical Operations | Strategic leadership & funding |
+| Clinical Process Owner | Lead Nurse | Define workflows and escalation logic |
+| End Users | Carers, Nurses | Conduct assessments, record data |
+| Approvers | Supervisors / Matrons | Act on escalated cases |
+| System Admin | IT Administrator | User roles, Power Platform governance |
+| Consultant | Solomon Okpuno | Design, implement, document & train |
 
 ---
 
 ### ❌ Current Challenges
 
-- Inconsistent recording of wellness checks  
-- Delays in escalation for abnormal vitals  
-- Lack of supervisor traceability  
-- No audit trail or escalation logs  
+- Reliance on paper forms leading to **data loss or delays**  
+- **No standard logic** for escalation thresholds  
+- Supervisors frequently **miss escalations** due to email overload  
+- Inability to **track decision timeframes or accountability**
 
 ---
 
 ### ✅ Proposed Solution
 
-> A Power Platform-based application with **automated escalation flows**, real-time alerting, and full traceability.
+The proposed solution digitally transforms the process from assessment to resolution using Microsoft’s low-code ecosystem.
 
-#### 🔧 Key Components:
-- **Model-Driven App:** Nurses submit wellness check forms  
-- **Power Automate:** Detect abnormal thresholds → escalate  
-- **Teams & Email:** Supervisors respond to alerts  
-- **Dataverse:** All actions logged with timestamps  
-- **Dashboards:** Track escalations and response time  
+#### 🔧 Core Components:
+- **Power Apps (Model-Driven):** Guided forms for wellness check submissions  
+- **Dataverse:** Secure and scalable backend for clinical data  
+- **Power Automate:** Triggers escalation logic, sends alerts  
+- **Microsoft Teams/Email:** Approval or rejection in the supervisor's native channel  
+- **Audit View:** Complete trail of actions taken, timestamps, and outcomes
 
-#### 🖼️ Solution Process Map  
+#### 🖼️ Strategic Visualisation – Process Flow  
 ![Wellness Check Process Map](https://github.com/okpunosolomon/Wellness-Check-App/blob/main/visuals/Process%20Map.png?raw=true)
 
 ---
 
-### 📦 Scope
+### 📦 Scope of Work
 
-**In Scope**
-- Vitals recording (temperature, BP, pulse)  
-- Threshold-based escalation logic  
-- Teams/email notifications  
-- Supervisor approvals and rejections  
-- Action audit trail
+**Included (In Scope)**
+- Patient profile setup and vitals recording  
+- Supervisor escalation flow based on predefined thresholds  
+- Email/Teams notification for escalations  
+- Approval/rejection workflows  
+- Action history dashboard
 
-**Out of Scope**
+**Excluded (Out of Scope – Phase 2)**
 - Patient diagnosis  
-- Integration with EHR (Phase 2)
+- External health record (EHR) integration  
+- AI-based prediction or triage logic
 
 ---
 
-### 📈 Success Metrics
+### 📈 Success Criteria
 
-- 80% reduction in manual delays  
-- 100% escalation traceability  
-- Supervisor response time < 10 min  
-- Zero missed policy breaches  
-
----
-
-### 🛡️ Risk & Mitigation
-
-| Risk | Mitigation |
-|------|------------|
-| Carer non-compliance | Add reminder flow logic |
-| Missed escalations | Enable retry and fallback |
-| Workflow errors | Pre-prod testing + alert on failure |
+- 80% decrease in missed escalations  
+- 90% reduction in time-to-approval for urgent cases  
+- All actions time-stamped and stored for audit purposes  
+- User satisfaction score ≥ 90% post-deployment  
 
 ---
 
-### ✍️ Sign-Off Table
+### 🛡️ Risk Assessment
+
+| Risk | Impact | Mitigation Strategy |
+|------|--------|----------------------|
+| Carers forgetting to escalate | High | Embed automatic trigger logic for thresholds |
+| Supervisor delay in approval | Medium | Dual-channel alert: Teams + Email |
+| Permission misconfiguration | High | Role-based testing across DEV/UAT |
+| Missed flow runs or outages | Medium | Alert on flow failures; retry logic enabled |
+
+---
+
+### ✍️ Approval Table
 
 | Role | Name | Signature |
 |------|------|-----------|
 | Project Sponsor |  |  |
-| Clinical Lead |  |  |
+| Lead Nurse |  |  |
 | Consultant | Solomon Okpuno | ✅ |
 
 ---
 
 ## ✅ 2. User Acceptance Testing (UAT)
 
-### 🎯 Purpose  
-To ensure the solution aligns with business requirements before go-live.
+### 🎯 UAT Goal  
+To confirm that the application satisfies business needs, functions as intended, and performs reliably under realistic use cases.
 
 ---
 
-### 🧪 UAT Test Scenarios
+### 🧪 UAT Test Matrix
 
-| ID | Scenario | Steps | Expected Result | Status |
-|----|----------|-------|-----------------|--------|
-| UAT-001 | Submit a Wellness Check | Carer records vitals | Assessment saved | ✅ |
-| UAT-002 | Normal Vitals | Vitals within threshold | No escalation triggered | ✅ |
-| UAT-003 | Abnormal Vitals | Carer enters critical BP | Supervisor notified | ✅ |
-| UAT-004 | Supervisor Approval | Supervisor approves via Teams | Status updated in app | ✅ |
-| UAT-005 | Supervisor Rejection | Supervisor rejects case | Status updated as "Rejected" | ✅ |
-| UAT-006 | Notification Sync | Flow sends Teams + Email alert | Supervisor receives both | ✅ |
-| UAT-007 | Dashboard Accuracy | Admin checks escalation logs | Records reflect current state | ✅ |
+| ID | Test Scenario | Steps | Expected Outcome | Status |
+|----|---------------|-------|------------------|--------|
+| UAT-001 | Submit patient assessment | Carer logs vitals and submits form | Form saved, system evaluates values | ✅ |
+| UAT-002 | No escalation triggered | Vitals are within normal limits | System logs without notifying supervisor | ✅ |
+| UAT-003 | Escalation triggered | Record abnormal BP and submit | Supervisor receives Teams + Email alert | ✅ |
+| UAT-004 | Supervisor approves case | Click "Approve" from Teams | Status changes to *Approved*, logs updated | ✅ |
+| UAT-005 | Supervisor rejects case | Reject via email link | Status = *Rejected*, patient monitored | ✅ |
+| UAT-006 | Flow reliability | Submit during off-hours | Escalation still triggers automatically | ✅ |
+| UAT-007 | Audit log accuracy | View Dataverse logs | Accurate timestamps of all actions | ✅ |
+| UAT-008 | Access control | Nurse tries to access supervisor data | Access denied | ✅ |
 
-#### 🖼️ Power Automate Flow Snapshot  
+#### 🖼️ UAT Visual Evidence – Escalation Workflow  
 ![Escalation Approval Flow](https://github.com/okpunosolomon/Wellness-Check-App/blob/main/visuals/Handling%20Escalation%20AprovalRejection%20Within%20Power%20Automate.png?raw=true)
 
 ---
 
-### 📝 UAT Sign-Off
+### 📝 Final UAT Sign-Off
 
 | Role | Name | Signature | Date |
 |------|------|-----------|------|
-| Project Sponsor |  |  |  |
-| Clinical Lead |  |  |  |
+| Sponsor |  |  |  |
+| Lead Nurse |  |  |  |
 | Consultant | Solomon Okpuno | ✅ |  |
 
 ---
@@ -152,72 +157,76 @@ To ensure the solution aligns with business requirements before go-live.
 
 ---
 
-### 🧭 Getting Started
+### 🧭 Accessing the App
 
-1. Visit [Power Apps](https://make.powerapps.com)  
-2. Select **Wellness Check App** from environment  
-3. Sign in with SOL Ltd Microsoft 365 credentials  
-
----
-
-### 👥 User Roles
-
-| Role | Permissions |
-|------|-------------|
-| Nurse/Carer | Record wellness checks |
-| Supervisor | Review escalations and approve/reject |
-| Admin | Review audit logs, manage user roles |
+1. Go to [Power Apps](https://make.powerapps.com)  
+2. Choose your SOL Ltd environment  
+3. Launch **Wellness Check App** from app list  
+4. Log in using your company credentials  
 
 ---
 
-### 🔍 Core Features
+### 👥 User Roles & Permissions
 
-#### 1. Submit a Patient Assessment  
-- Navigate to **Assessments** → Click *New Record*  
-- Fill in vital signs and patient info  
-- Click *Submit*
-
-#### 2. Supervisor Escalation Flow  
-- Triggered automatically if any vitals breach defined limits  
-- Supervisor notified via Teams and Email
-
-#### 3. Approve or Reject  
-- Supervisors can respond directly from Teams  
-- Status is synced to the app
-
-#### 4. View History  
-- All escalation activity is logged and visible in **Escalation Logs**
+| Role | Key Permissions |
+|------|-----------------|
+| Carer / Nurse | Create and submit patient records |
+| Supervisor | Approve/reject escalations, view records |
+| Admin | Configure tables, manage users, monitor logs |
 
 ---
 
-### 🖼️ After Approval – App Visual  
+### 🔍 Application Features
+
+#### 1. Record a Patient Assessment  
+- Navigate to **Patient Vitals → New Entry**  
+- Input vitals: BP, heart rate, temperature  
+- Click **Submit Assessment**
+
+#### 2. Escalation Flow Trigger  
+- If values exceed safe ranges → system sends alert  
+- **Supervisor receives Teams + Email notification**
+
+#### 3. Supervisor Actions  
+- Review record and click *Approve* or *Reject*  
+- Submit decision directly via Teams or within app
+
+#### 4. Post-Decision Dashboard  
+- View outcomes in **Escalation Logs**  
+- Filter by date, user, outcome
+
+---
+
+### 🖼️ Post-Escalation View  
 ![Post-Approval View](https://github.com/okpunosolomon/Wellness-Check-App/blob/main/visuals/After%20Escalation%20was%20Approved.png?raw=true)
 
 ---
 
-### 🔔 Notifications  
-Notifications sent via:
-- Microsoft Teams  
-- Outlook Email  
-- In-App Notification (Planned)
+### 🔔 Notification Overview
+
+| Type | Trigger |
+|------|---------|
+| Teams | Abnormal assessment submitted |
+| Email | Escalation decision pending |
+| System Log | All actions recorded in Dataverse |
 
 ---
 
-### 🛠️ Troubleshooting Guide
+### 🔧 Troubleshooting & Self-Service
 
-| Issue | Resolution |
-|--------|-------------|
-| Approval not received | Verify supervisor Teams setup |
-| Flow not triggered | Check Power Automate run history |
-| Status not updating | Refresh Dataverse connection |
+| Issue | Suggested Fix |
+|-------|---------------|
+| App not launching | Verify Power Apps access and role |
+| No notification received | Check flow run history and Teams permissions |
+| Wrong user triggered | Validate escalation logic and OData filters |
 
 ---
 
-### 🤝 Support Contacts
+### 📞 Support Contacts
 
-- **Support Team:** support@sol-ltd.com  
-- **Consultant Contact:** Solomon Okpuno  
-- **GitHub:** [github.com/okpunosolomon](https://github.com/okpunosolomon)
+- **Support Email:** [support@sol-ltd.com](mailto:support@sol-ltd.com)  
+- **Emergency Escalation:** +44 20 5555 0123  
+- **Consultant:** Solomon Okpuno – [GitHub](https://github.com/okpunosolomon)
 
 ---
 
@@ -225,9 +234,9 @@ Notifications sent via:
 
 | Version | Date | Summary | Author |
 |---------|------|---------|--------|
-| 1.0 | Dec 2025 | Initial Deployment | Solomon Okpuno |
+| 1.0 | Dec 2025 | First Release (Full Deployment) | Solomon Okpuno |
 
 ---
 
-> 🧩 *This documentation unifies the Wellness Check Application's requirements, testing plan, and user training into one traceable reference for both business and technical stakeholders.*
+> 📌 *This document consolidates all key delivery components – from business requirements and testing to user education – providing a single source of truth for the Wellness Check App implementation.*
 
