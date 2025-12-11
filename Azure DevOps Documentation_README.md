@@ -1,4 +1,3 @@
-```markdown
 # 🩺 Wellness Check Application – Agile Project Delivery Report  
 **Client:** Confidential (Healthcare Sector)  
 **Consultant:** Solomon Okpuno | Power Platform Architect
