@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     %% Define styles
     classDef user fill:#dff0d8,stroke:#3c763d,stroke-width:1px;
