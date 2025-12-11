@@ -93,6 +93,7 @@ The app integrates **Canvas Power Apps**, **Power Automate**, and **Azure SQL Se
 📷 **Flow Logic Example**  
 ![Escalation Logic](./visuals/Handling%20Escalation%20ApprovalRejection%20Within%20Power%20Automate.png)
 
+
 - If an abnormal value is recorded, the app triggers an **escalation request**
 - Power Automate sends notification to the **assigned supervisor**
 - Supervisors act from within **Teams or Outlook**
