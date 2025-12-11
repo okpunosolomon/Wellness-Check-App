@@ -91,7 +91,8 @@ The app integrates **Canvas Power Apps**, **Power Automate**, and **Azure SQL Se
 ![Approval Flow](./visuals/Patient%20Approval%20Flow%20.png)
 
 📷 **Flow Logic Example**  
-![Escalation Logic](./visuals/Handling%20Escalation%20ApprovalRejection%20Within%20Power%20Automate.png)
+![Escalation Logic](https://github.com/okpunosolomon/Wellness-Check-App/blob/main/visuals/Handling%20Escalation%20AprovalRejection%20Within%20Power%20Automate.png?raw=true)
+
 
 
 - If an abnormal value is recorded, the app triggers an **escalation request**
