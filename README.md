@@ -1,54 +1,52 @@
 # 🩺 Wellness Check Application  
-**Modernizing Patient Health Monitoring & Escalation with Microsoft Power Platform**
+**Modernizing Patient Health Monitoring and Clinical Escalation Using Microsoft Power Platform**
 
----
-
-![Banner](./visuals/Health%20Escalation%20Approval%20request%20via%20Mail%20Power%20automate.png)
+![Banner](./visuals/Banner.png)
 
 ---
 
 ## 🚀 Executive Overview
 
-The **Wellness Check Application** is a digital health workflow solution designed to streamline the way healthcare organizations perform wellness assessments, escalate clinical concerns, and ensure compliance.
+The **Wellness Check Application** is an enterprise-grade solution that digitizes the entire workflow for conducting patient wellness checks, capturing observations, and escalating abnormal readings. Designed using **Microsoft Power Platform** components (Canvas App, Power Automate, SQL Server), the app supports **real-time decision-making**, **audit compliance**, and **mobile-first care delivery**.
 
-Developed with **Microsoft Power Platform** technologies — including **Canvas Apps**, **Power Automate**, and **Azure SQL Server** — the app offers **real-time, auditable, and mobile-first workflows** that replace manual, paper-based processes.
-
-### ✅ Strategic Objectives
-- Improve patient safety through instant clinical escalation
-- Standardize documentation with digital records
-- Reduce staff burden and burnout through automation
-- Ensure audit-readiness and regulatory compliance
+### Key Objectives
+- Digitize patient assessments and reduce paper-based errors
+- Streamline escalations for high-risk patient indicators
+- Improve supervisor response times and care coordination
+- Ensure data traceability for compliance and audits
 
 ---
 
 ## 🔍 Problem Landscape
 
-Healthcare professionals often face:
+| Challenge                         | Impact                                                             |
+|----------------------------------|--------------------------------------------------------------------|
+| Manual wellness checks           | Errors, missed risks, inconsistent reporting                       |
+| Fragmented communication         | Delays from phone calls, emails, and paper notes                   |
+| Supervisor approvals are delayed | Poor visibility into patient status and assessment urgency         |
+| No single view of patient history| Inefficient auditing and repeated work                             |
+| Regulatory and safeguarding risk | High exposure to compliance gaps                                   |
 
-| Problem                            | Impact                                                           |
-|------------------------------------|------------------------------------------------------------------|
-| Manual assessments (paper/excel)   | Inconsistent data, missed risks, lack of traceability            |
-| Slow response to abnormal readings | Delayed care, poor patient outcomes                              |
-| Disjointed communication channels  | Approval bottlenecks, fragmented accountability                  |
-| No centralized patient history     | Difficult audits, incomplete care history                        |
-| Compliance & safeguarding risk     | Inability to meet regulatory and internal audit requirements     |
-
-> 📉 These issues contribute to workflow inefficiencies, high error rates, and avoidable clinical incidents.
+> These gaps lead to **missed escalations**, **staff burnout**, and **clinical risk**.
 
 ---
 
 ## 💡 Solution Summary
 
-The **Wellness Check App** addresses these pain points by offering a **centralized, intelligent health assessment system** that empowers frontline carers and clinical supervisors.
+The app provides a **centralized platform** for digital assessments, auto-escalations, and structured communication.
 
-### 🔧 Key Capabilities
-- 📋 Digital wellness checks: BP, temperature, glucose, meds, mood
-- 🚦 Auto-triggered escalation flows with real-time alerts
-- 📥 Supervisor approvals via **Teams** or **Outlook**
-- 🔐 Role-based security: carers, supervisors, and admins
-- 💬 In-app communications: call, email, Teams chat
-- 🧾 Audit-ready records with timestamped activity logs
-- 📱 Fully responsive across mobile and desktop
+### Capabilities Overview
+- Fully digital patient assessments (BP, glucose, meds, mood, etc.)
+- Auto-triggered escalation workflows using Power Automate
+- Supervisor approvals via Microsoft Teams or Outlook
+- Mobile and desktop compatibility
+- Role-based access control and secure data storage
+- In-app communication tools (call, email, Teams)
+
+📷 Screens:
+- ![Patient Record Creation](./visuals/Creating%20New%20Patient%20Record.png)
+- ![Approval via Teams](./visuals/Teams%20Escalation%20Approval%20Status.png)
+- ![Escalation Result](./visuals/After%20Escalation%20was%20Approved.png)
 
 ---
 
@@ -56,100 +54,97 @@ The **Wellness Check App** addresses these pain points by offering a **centraliz
 
 | Layer           | Technology             | Description                                      |
 |----------------|------------------------|--------------------------------------------------|
-| UI Layer        | Power Apps Canvas App  | Interface for wellness input and record review   |
-| Workflow Engine | Power Automate         | Business logic, escalation triggers              |
-| Data Layer      | Azure SQL Server       | Scalable backend for wellness and audit data     |
-| Communication   | Teams & Outlook        | Supervisor notifications and approvals           |
-| Access Control  | Role-Based Permissions | Data protection and user-specific experiences    |
+| UI Layer        | Canvas Power App        | Interface for carers, nurses, and supervisors    |
+| Workflow Engine | Power Automate          | Manages escalation logic and notifications       |
+| Data Layer      | Azure SQL Server        | Central storage for all wellness records         |
+| Communication   | Microsoft Teams, Outlook| Supervisor interaction and notification channel  |
+| Access Control  | Role-Based Permissions  | Permissioned views for each user type            |
 
-📌 *See diagram in `/visuals/System Architecture.png`*
+📘 Diagram:
+- ![Architecture Flow](./visuals/System%20Architecture.png)
 
 ---
 
 ## 🔄 Functional Workflow
 
-1. **Select Patient** — Searchable interface with filters
-2. **Review History** — Timeline of prior wellness assessments
-3. **Complete Check** — Record vital signs, meds, and observations
-4. **Store Record** — Saved securely to SQL Server with timestamp
-5. **Trigger Escalation (if needed)** — Based on threshold rules
-6. **Supervisor Notified** — Via Teams or Email
-7. **Approval Action** — Status updated automatically in app
+1. **Select Patient** from the searchable dashboard  
+2. **Review Previous Assessments** with history and assessor notes  
+3. **Complete New Wellness Check** (BP, meds, mood, etc.)  
+4. **Store Record** securely with timestamp in SQL Server  
+5. **Trigger Escalation** automatically if abnormal thresholds are detected  
+6. **Supervisor Approves or Rejects** via Microsoft Teams or Outlook  
+7. **Real-Time Update** reflected in app status and backend
 
-📷 Visuals:
-- `Creating New Patient Record.png`
-- `Teams Escalation Approval Status.png`
-- `After Escalation was Approved.png`
-
----
-
-## 🔁 Escalation & Communication Flow
-
-Escalations are powered by **Power Automate**, ensuring timely routing and resolution.
-
-### 🔄 Flow Summary
-- Escalation triggered by app logic
-- Notification sent to assigned supervisor
-- Approvals processed via Microsoft Teams or Outlook
-- Decision reflected back in app instantly
-- Escalation status logged with timestamp and approver identity
-
-📂 Refer to visuals:
-- `Patient Approval Flow.png`
-- `Handling Escalation ApprovalRejection Within Power Automate.png`
+📸 Screens:
+- ![Escalation Notification](./visuals/Health%20Escalation%20Approval%20request%20via%20Mail%20Power%20automate.png)
+- ![Supervisor Approval Flow](./visuals/Patient%20Approval%20Flow%20.png)
 
 ---
 
-## 🔐 Security & Governance
+## 🔁 Escalation & Communication Logic
 
-| Area            | Control Measures                                      |
-|------------------|--------------------------------------------------------|
-| Data Protection  | Azure SQL with row-level security & encryption         |
-| Access Management| Role-based app experiences (Nurse, Supervisor, Admin) |
-| Audit Logs       | Time-stamped actions tracked and stored               |
-| Regulatory Fit   | HIPAA-aligned storage and communications               |
+Escalation workflows are automated end-to-end with **Power Automate**:
 
-> 🔒 This app enforces policy-driven access, activity logging, and full data traceability.
+- Triggers based on recorded vital thresholds or red flags
+- Supervisor notified with escalation request details
+- Decision made inside Microsoft Teams or Email
+- Status synced back to SQL and Power App in real time
 
----
-
-## 📊 Measured Business Outcomes
-
-| KPI                          | Before             | After                | Benefit                 |
-|-----------------------------|--------------------|----------------------|-------------------------|
-| Escalation Response Time     | 24–48 hours         | < 8 hours             | 70% faster              |
-| Documentation Accuracy       | Manual & error-prone | Digitized, auto-timestamped | 60% fewer errors  |
-| Supervisor Response Rate     | Inconsistent        | 95% within SLA        | Faster, reliable action |
-| Admin Hours/Week             | 10+ hours           | < 3 hours             | 40+ hrs/week saved      |
-| Paper Usage                  | High                | Eliminated            | 100% digital workflow   |
+📸 Visual:
+- ![Escalation Rejection Flow](./visuals/Handling%20Escalation%20ApprovalRejection%20Within%20Power%20Automate.png)
 
 ---
 
-## 🧪 Technical Implementation
+## 🔐 Security & Compliance
 
-- **Platform**: Microsoft Power Platform (Canvas App + Power Automate)
-- **Backend**: Azure SQL Server
-- **Cloud Flows**:
+| Control Area        | Implementation Details                                         |
+|---------------------|----------------------------------------------------------------|
+| Data Storage        | Azure SQL Server with encryption and role-level restrictions   |
+| Audit Trails        | Timestamped logs for every user action                         |
+| Access Management   | Role-based security (Carer, Supervisor, Admin)                 |
+| Regulatory Fit      | Built to align with HIPAA and GDPR principles                  |
+
+> Each event is traceable to a user and time — ensuring audit-readiness and safeguarding compliance.
+
+---
+
+## 📊 Measurable Business Outcomes
+
+| Metric                        | Before                 | After Implementation   | Benefit                 |
+|------------------------------|------------------------|------------------------|--------------------------|
+| Escalation Response Time     | 24–48 hours            | Less than 8 hours      | 70% faster               |
+| Admin Workload               | 10+ hrs/week           | < 3 hrs/week           | 40+ hrs saved weekly     |
+| Documentation Errors         | High (manual entries)  | Significantly reduced  | 60% error reduction      |
+| Supervisor Approval Rate     | Inconsistent           | 95% within SLA         | Predictable workflows    |
+| Paperwork & Duplication      | Commonplace            | Fully eliminated       | 100% digital compliance  |
+
+---
+
+## 🧪 Technical Highlights
+
+- **Platform:** Microsoft Power Platform (Canvas App + Power Automate)
+- **Backend:** Azure SQL Server
+- **Authentication:** Azure Active Directory (optional)
+- **Flows Included:**
   - `WellnessCheck_Escalation_Trigger`
   - `Supervisor_Approval_Flow`
-  - `Update_Patient_Status_Auto`
-- **Testing**:
-  - Conducted across 3 user roles (Carer, Supervisor, Admin)
-  - 100% UAT pass rate across functional cases
-- **Deployment**:
-  - Exported as Managed Solution ZIP for lifecycle management
+  - `Auto_Update_Patient_Status`
+- **Testing:**  
+  - UAT performed with carers, supervisors, and admins  
+  - All scenarios passed with 100% completion rate  
+- **Deployment Format:** Managed Solution ZIP for ALM
 
 ---
 
-## 🔭 Future Roadmap
+## 🔭 Roadmap
 
-| Feature                     | Description                                    | Target Release |
-|-----------------------------|------------------------------------------------|----------------|
-| 🔍 Predictive Alerts (AI)   | Early warning system for risk conditions       | Q1 2026        |
-| 📊 Power BI Dashboards     | Supervisor and executive reporting dashboards  | Q2 2026        |
-| 🎙️ Voice-Enabled Entry     | Voice-to-text for mobile assessments           | Q3 2026        |
-| 📡 IoT Device Integration   | Smart health monitoring via wearables          | Q4 2026        |
-| 🏥 Multi-Site Rollout       | Centralized system across care networks        | 2027           |
+| Feature                       | Description                                  | ETA        |
+|-------------------------------|----------------------------------------------|------------|
+| Predictive AI Escalation      | ML-driven early warnings                     | Q1 2026    |
+| Power BI Integration          | Visual performance dashboards                | Q2 2026    |
+| Voice-Based Assessments       | Hands-free data input for mobile carers      | Q3 2026    |
+| IoT Device Integration        | Real-time vitals from smart devices          | Q4 2026    |
+| Multi-Site Scaling            | Centralized architecture for all facilities  | 2027       |
 
 ---
 
@@ -157,10 +152,10 @@ Escalations are powered by **Power Automate**, ensuring timely routing and resol
 
 ```
 
-📁 visuals/                     → Screenshots, app interface, and flow diagrams
-📁 Overview PDF/               → Client presentation slides
-📁 Solution Zip File/          → Managed Power Platform solution
-📄 README.md                   → Project documentation (this file)
+📁 visuals/                     → Screenshots of UI, flow logic, escalation views
+📁 Solution Zip File/           → Managed Power Platform package
+📁 Overall PDF Project Presentation/ → Stakeholder-facing presentation deck
+📄 README.md                   → This documentation file
 
 ```
 
@@ -168,18 +163,16 @@ Escalations are powered by **Power Automate**, ensuring timely routing and resol
 
 ## 📌 Conclusion
 
-The **Wellness Check Application** is not just a Power App — it's a **transformational framework** for healthcare workflow modernization.
+The **Wellness Check App** is a healthcare-grade solution for organizations seeking to modernize how they monitor, escalate, and document patient wellness. With real-time automation, secure data governance, and seamless communication integrations, it enables safer care, faster decisions, and full compliance — without sacrificing ease of use.
 
-By automating risk escalation, digitizing patient assessments, and creating a seamless audit trail, the solution delivers measurable outcomes in **clinical safety, operational efficiency, and regulatory confidence**.
-
-> 💬 If your organization seeks to digitize care delivery and reduce operational friction — let’s talk implementation.
+> Want to implement this across your facility? Let's make it happen.
 
 ---
 
-### 👤 Developed By
+## 👤 Developed by
 
 **Solomon Okpuno**  
-*Power Platform Consultant | Data & Workflow Automation Specialist*  
-🔗 [LinkedIn](https://linkedin.com/in/okpunosolomon) • 💻 [GitHub](https://github.com/okpunosolomon)
+*Power Platform Consultant | Workflow & Automation Specialist*  
+[LinkedIn](https://linkedin.com/in/okpunosolomon) • [GitHub](https://github.com/okpunosolomon)
 
----
+
